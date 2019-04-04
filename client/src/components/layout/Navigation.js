@@ -13,16 +13,27 @@ class Navigation extends React.Component {
     return (
       <div>
         <Navbar bg="light" variant="light">
-          <Navbar.Brand href="#home">PetBook</Navbar.Brand>
+          <Navbar.Brand href="#home">PetHub</Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/Adoption">Adoption</Nav.Link>
           </Nav>
+
           <Form inline>
           <Nav className="mr-auto">
-          <Nav.Link href="/">Logged in as: {user.name}</Nav.Link>
-            <Nav.Link href="/register">Register</Nav.Link>
+            <Nav.Item>
+              <Nav.Link href="/" className = "Loggedin">
+              Logged in as:
+              {user.name}</Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link href="/register">Register</Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
             <Nav.Link href="/login">Login</Nav.Link>
+            </Nav.Item>
           </Nav>
           </Form>
         </Navbar>

@@ -5,7 +5,8 @@ import Form from "../layout/Form";
 import Card from "../layout/Card";
 import Animal from "../layout/Animal";
 import { List } from "../layout/List";
-// import Modal from "../layout/Modal";
+import Modal from "../layout/Modal";
+import "../css/Adoption.css";
 
 class Adoption extends Component {
   constructor(props) {
@@ -59,42 +60,44 @@ class Adoption extends Component {
     let results;
     if (Resclicked) {
       results =
-        <Container>
-          <Card title="Results">
-            {this.state.pets.length ? (
-              <List>
-                {this.state.pets.map(pet => (
-                  <Animal
-                    key={pet.PetId}
-                    name={pet.Name}
-                    gender={pet.Gender}
-                    type={pet.PetType}
-                    photo={pet.PrimaryPhotoUrl}
-                    Site={pet.ProfileUrl}
-                    Lat={pet.Latitude}
-                    Lng={pet.Longitude}
-                    show={this.show}
-                    hideModal ={this.hideModal}
-                    showModal = {this.showModal}
-                  />
-                ))}
-              </List>
-            ) : (
-                <h2 className="text-center">{this.state.message}</h2>
-              )}
-          </Card>
-        </Container>
+      <div className = "container Adoption">
+          <Container>
+              <Card title="Results">
+                {this.state.pets.length ? (
+                  <List>
+                    {this.state.pets.map(pet => (
+                      <Animal
+                        key={pet.PetId}
+                        name={pet.Name}
+                        gender={pet.Gender}
+                        type={pet.PetType}
+                        photo={pet.PrimaryPhotoUrl}
+                        Site={pet.ProfileUrl}
+                        Lat={pet.Latitude}
+                        Lng={pet.Longitude}
+                        show={this.state.show}
+                        hideModal ={this.hideModal}
+                        showModal = {this.showModal}
+                      />
+                    ))}
+                  </List>
+                ) : (
+                    <h2 className="text-center">{this.state.message}</h2>
+                  )}
+              </Card>
+          </Container>
+        </div>
     }
     return (
-      <div>
-        {/* <Modal show={this.state.show} handleClose={this.hideModal}>
-          <p>Modal</p>
-          <p>Data</p>
-        </Modal>
-        <button type="button" onClick={this.showModal}>
-          open
-        </button> */}
+      <div className = "CardSection">
+      <div className = "row">
+      <div className="col md12 center">
 
+        <div className="col s12" style={{ paddingLeft: "11.250px" }}>
+          <h4>
+              <h2>Search Your Pets Here</h2>
+          </h4>
+        </div>
         <Container>
           <Form
             handleInputChange={this.handleInputChange}
@@ -103,7 +106,8 @@ class Adoption extends Component {
           />
         </Container>
         {results}
-
+      </div>
+      </div>
       </div>
     );
   }

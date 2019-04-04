@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
+import "../css/Login.css";
 
 class Login extends Component {
     constructor() {
@@ -47,9 +48,9 @@ class Login extends Component {
     render() {
         const { errors } = this.state;
         return (
-            <div className="container">
-                <div style={{ marginTop: "4rem" }} className="row">
-                    <div className="col s8 offset-s2">
+            <div className="container Login" style={{marginTop: "30px"}}>
+                <div className="row">
+                    <div className="col md12 center">
                         <Link to="/" className="btn-flat waves-effect">
                             <i className="material-icons left">keyboard_backspace</i> Back to
                             home
@@ -58,7 +59,7 @@ class Login extends Component {
                             <h4>
                                 <b>Login</b> below
               </h4>
-                            <p className="grey-text text-darken-1">
+                            <p className="black-text text-darken-1">
                                 Don't have an account? <Link to="/register">Register</Link>
                             </p>
                         </div>
@@ -109,7 +110,7 @@ class Login extends Component {
                                     className="btn btn-large waves-effect waves-light hoverable blue accent-3"
                                 >
                                     Login
-                </button>
+                                </button>
                             </div>
                         </form>
                     </div>
