@@ -1,3 +1,5 @@
+// This is for mongo lab online and secret key storage
+
 require('dotenv').config();
 
 module.exports = {

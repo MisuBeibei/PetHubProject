@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
+
 class Login extends Component {
     constructor() {
         super();
@@ -19,6 +20,7 @@ class Login extends Component {
           this.props.history.push("/dashboard");
         }
       }
+
     componentWillReceiveProps(nextProps) {
         if (nextProps.auth.isAuthenticated) {
             this.props.history.push("/dashboard"); // push user to dashboard when they login
@@ -29,9 +31,11 @@ class Login extends Component {
             });
         }
     }
+
     onChange = e => {
         this.setState({ [e.target.id]: e.target.value });
     };
+    
     onSubmit = e => {
         e.preventDefault();
         const userData = {

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
+
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { logoutUser } from "../../actions/authActions";
@@ -29,13 +30,19 @@ class Navigation extends React.Component {
     );
   }
 }
+
+
 Navigation.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
 };
+
+
 const mapStateToProps = state => ({
   auth: state.auth
 });
+
+
 export default connect(
   mapStateToProps,
   { logoutUser }

@@ -5,8 +5,7 @@ import Form from "../layout/Form";
 import Card from "../layout/Card";
 import Animal from "../layout/Animal";
 import { List } from "../layout/List";
-import Modal from "../layout/Modal";
-
+// import Modal from "../layout/Modal";
 
 class Adoption extends Component {
   constructor(props) {

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
+
 class Register extends Component {
     constructor() {
         super();
@@ -28,9 +29,11 @@ class Register extends Component {
             });
         }
     }
+    
     onChange = e => {
         this.setState({ [e.target.id]: e.target.value });
     };
+
     onSubmit = e => {
         e.preventDefault();
         const newUser = {

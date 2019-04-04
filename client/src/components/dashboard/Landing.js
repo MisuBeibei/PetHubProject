@@ -52,6 +52,7 @@ class Landing extends Component {
     );
   }
 }
+
 Landing.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
@@ -59,6 +60,7 @@ Landing.propTypes = {
 const mapStateToProps = state => ({
   auth: state.auth
 });
+
 export default connect(
   mapStateToProps,
   { logoutUser }
