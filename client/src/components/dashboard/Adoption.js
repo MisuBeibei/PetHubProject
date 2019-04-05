@@ -5,7 +5,7 @@ import Form from "../layout/Form";
 import Card from "../layout/Card";
 import Animal from "../layout/Animal";
 import { List } from "../layout/List";
-import Modal from "../layout/Modal";
+
 import "../css/Adoption.css";
 
 class Adoption extends Component {
@@ -98,7 +98,6 @@ class Adoption extends Component {
               <h2>Search Your Pets Here</h2>
           </h4>
         </div>
-        
         <Container>
           <Form
             handleInputChange={this.handleInputChange}

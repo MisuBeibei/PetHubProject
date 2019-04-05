@@ -12,6 +12,8 @@
     "install": "^0.12.2",
     "jwt-decode": "^2.2.0",
     "npm": "^6.9.0",
+    "jwt-decode": "^2.2.0",
+    "material-ui": "^1.0.0-beta.47",
     "prop-types": "^15.7.2",
     "react": "^16.8.5",
     "react-bootstrap": "^1.0.0-beta.6",

@@ -1,0 +1,21 @@
+.list-group-item {
+    background-color: #ffffff;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.card {
+    margin-top: 25px;
+    background-color: rgb(245,246,245);
+
+}
+.row {
+    margin-bottom: 0%;
+  
+}
+/* .card-body {
+    width: 33%;
+    float: left;
+} */
