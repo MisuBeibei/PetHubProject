@@ -98,6 +98,7 @@ class Adoption extends Component {
               <h2>Search Your Pets Here</h2>
           </h4>
         </div>
+        
         <Container>
           <Form
             handleInputChange={this.handleInputChange}
