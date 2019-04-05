@@ -19,7 +19,7 @@ npm install --save google-map-react
 
 # Running the tests
 
-node server.js at root to connect to mongo
+node server.js at root to connect to mongo<br/>
 npm start in client to start React app
 
 
