@@ -1,4 +1,4 @@
-# PetHub_Project03
+# PetHub
 
 ## App Description
 
@@ -8,19 +8,18 @@ This app is a full-stack login/authorization app using the MERN stack (MongoDB f
 
 ### npm install at root:
 
-npm i -D nodemon
+npm i -D nodemon<br/>
 npm i bcryptjs body-parser concurrently express is-empty jsonwebtoken mongoose passport passport-jwt validator
 
 ### npm install at client:
 
-npm i axios classnames jwt-decode react-redux react-router-dom redux redux-thunk
+npm i axios classnames jwt-decode react-redux react-router-dom redux redux-thunk<br/>
 npm install --save google-map-react
 
 
 # Running the tests
 
 node server.js at root to connect to mongo
-
 npm start in client to start React app
 
 
