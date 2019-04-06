@@ -18,9 +18,9 @@ npm install --save google-map-react
 
 
 ## Running the tests
-* **Root:
+* Root:
 node server.js<br/>
-* **client:
+* client:
 npm start
 
 
