@@ -2,6 +2,7 @@ const router = require("express").Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
+
 // Load input validation
 const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
@@ -9,8 +10,6 @@ const validateLoginInput = require("../../validation/login");
 const User = require("../../models/User");
 const SavedPets = require("../../models/SavedPets");
 const fetch = require("node-fetch");
-require('dotenv').config();
-
 
 router.get("/dog/:zip/:type/:gender", (req, res) => {
     //api call with paramters
@@ -24,7 +23,7 @@ router.get("/dog/:zip/:type/:gender", (req, res) => {
             "PageNumber": 1,
         }),
         headers: {
-            'api-key': process.env.DogAPI,
+            'api-key': '10E88EC7-B274-447F-9EF2-C21BD828356D',
             "Content-Type": "application/json"
         }
     })

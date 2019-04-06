@@ -2,8 +2,6 @@
 import React, { Component } from 'react';
 import { GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 import CurrentLocation from './CurrentLocation';
-require('dotenv').config();
-
 export class MapContainer extends Component {
     constructor(props) {
         super(props);
@@ -36,8 +34,10 @@ export class MapContainer extends Component {
         <CurrentLocation
           centerAroundCurrentLocation
           google={this.props.google}
-        >        
-        <Marker onClick={this.onMarkerClick} name={this.props.Name} position={{lat: this.props.Latitude, lng: this.props.Longitude}} /> 
+        >
+        <Marker onClick={this.onMarkerClick}
+                name={'Current location'} />          
+                <Marker onClick={this.onMarkerClick} name={this.props.Name} position={{lat: this.props.Latitude, lng: this.props.Longitude}} /> 
           {/* {this.props.pets ? this.props.pets.map(p => 
           <Marker onClick={this.onMarkerClick} name={p.Name} position={{lat: p.Latitude, lng: p.Longitude}} /> 
           ): console.log("no pets yet!")} */}

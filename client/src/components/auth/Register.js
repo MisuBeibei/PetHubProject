@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
+import "../css/Register.css";
+
 class Register extends Component {
     constructor() {
         super();
@@ -44,9 +46,9 @@ class Register extends Component {
     render() {
         const { errors } = this.state;
         return (
-            <div className="container">
+            <div className="container Register">
                 <div className="row">
-                    <div className="col s8 offset-s2">
+                    <div className="col s8">
                         <Link to="/" className="btn-flat waves-effect">
                             <i className="material-icons left">keyboard_backspace</i> Back to
                             home
@@ -55,7 +57,7 @@ class Register extends Component {
                             <h4>
                                 <b>Register</b> below
               </h4>
-                            <p className="grey-text text-darken-1">
+                            <p className="dark-text text-darken-1">
                                 Already have an account? <Link to="/login">Log in</Link>
                             </p>
                         </div>
