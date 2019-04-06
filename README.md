@@ -17,10 +17,11 @@ npm i axios classnames jwt-decode react-redux react-router-dom redux redux-thunk
 npm install --save google-map-react
 
 
-# Running the tests
-
-node server.js at root to connect to mongo<br/>
-npm start in client to start React app
+## Running the tests
+* **Root:
+node server.js<br/>
+* **client:
+npm start
 
 
 ## Authors
